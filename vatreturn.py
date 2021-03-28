@@ -123,7 +123,7 @@ def do_action(action, endpoint, params={}, data={}):
 def obligations(show_all=False):
     if show_all:
         today = datetime.date.today()
-        from_date = today - datetime.timedelta(days=365*2)
+        from_date = today - datetime.timedelta(days=365)
         to_date = today
         params = {
             'from': from_date.strftime("%Y-%m-%d"),
